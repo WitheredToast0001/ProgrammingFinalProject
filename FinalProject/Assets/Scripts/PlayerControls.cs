@@ -28,9 +28,9 @@ public class PlayerControls : MonoBehaviour
         if(playerRb.position.y < 0)
         {
             Destroy(gameObject);
-            Instantiate(player, new Vector3(0, 1.1f, 0), player.transform.rotation);
+            Instantiate(player, new Vector3(0, 1.1f, 0), new Quaternion());
         }
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.R))
         {
             transform.Translate(new Vector3(0, 1.1f, 0));
         }
