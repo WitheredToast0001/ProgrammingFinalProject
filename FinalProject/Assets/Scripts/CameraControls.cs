@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraControls : MonoBehaviour
 {
     public GameObject player;
     private Vector3 offset = new Vector3(0, 2.75f, -1.5f);

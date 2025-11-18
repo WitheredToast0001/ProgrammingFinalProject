@@ -5,13 +5,10 @@ public class PlayerControls : MonoBehaviour
     public float moveSpeed;
     private Rigidbody playerRb;
     public float jumpPower;
-    public GameObject player;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        GameObject player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -28,7 +25,6 @@ public class PlayerControls : MonoBehaviour
         if(playerRb.position.y < 0)
         {
             Destroy(gameObject);
-            Instantiate(player, new Vector3(0, 1.1f, 0), new Quaternion());
         }
         if(Input.GetKeyDown(KeyCode.R))
         {
