@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5904961397796680188}
   - component: {fileID: 1638542930827818158}
   - component: {fileID: 8761368701188203510}
-  - component: {fileID: 35289738308785713}
   - component: {fileID: 3482960577949179934}
   m_Layer: 0
   m_Name: Player
@@ -115,21 +114,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &35289738308785713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7993194802381073378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817aba52cc70f934288e1eb497cbfe5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerControls
-  moveSpeed: 5
-  jumpPower: 10
-  player: {fileID: 7993194802381073378}
 --- !u!54 &3482960577949179934
 Rigidbody:
   m_ObjectHideFlags: 0
